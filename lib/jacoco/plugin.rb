@@ -117,7 +117,7 @@ module Danger
       branch_counter = counters.detect { |e| e.type.eql? 'BRANCH' }
       line_counter = counters.detect { |e| e.type.eql? 'LINE' }
       counter = branch_counter.nil? ? line_counter : branch_counter
-      counter.nill? ? "N/A" : counter
+      counter.to_s
     end
 
     # rubocop:disable Style/SignalException
