@@ -73,7 +73,7 @@ module Danger
     # It returns a specific class code coverage and an emoji status as well
     def report_class(jacoco_class)
       counter = coverage_counter(jacoco_class)
-      coverage = counter.nil? ? (counter.covered.fdiv(counter.covered + counter.missed) * 100).floor : 0.0
+      coverage = counter.nil? ? 0.0 : (counter.covered.fdiv(counter.covered + counter.missed) * 100).floor
       required_coverage = minimum_class_coverage_map[jacoco_class.name]
       required_coverage = minimum_class_coverage_percentage if required_coverage.nil?
       status = coverage_status(coverage, required_coverage)
