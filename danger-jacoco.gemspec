@@ -6,8 +6,8 @@ require 'jacoco/gem_version.rb'
 Gem::Specification.new do |spec|
   spec.name          = 'danger-jacoco'
   spec.version       = Jacoco::VERSION
-  spec.authors       = ['Anton Malinskiy']
-  spec.email         = ['anton@malinskiy.com']
+  spec.authors       = ['LW Android Team']
+  spec.email         = ['NA']
   spec.description   = %q{A short description of danger-jacoco.}
   spec.summary       = %q{A longer description of danger-jacoco.}
   spec.homepage      = 'https://github.com/Malinskiy/danger-jacoco'
@@ -19,10 +19,10 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'danger-plugin-api', '~> 1.0'
-  spec.add_runtime_dependency 'nokogiri-happymapper', '~> 0.6'
+  spec.add_runtime_dependency 'nokogiri-happymapper', '~> 0.8.1'
 
   # General ruby development
-  spec.add_development_dependency 'bundler', '~> 1.16'
+  spec.add_development_dependency 'bundler', '~> 2.1.4'
   spec.add_development_dependency 'rake', '~> 12.3'
 
   # Testing support
